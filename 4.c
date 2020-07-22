@@ -6,8 +6,12 @@ int main()
     for(int i=0;i<5;i++)
     {
         printf("Enter full name %d:",i+1);
-        scanf("%[^\n]s",names[i]);
-        scanf("%",&trash);
+        scanf("%s",names[i]);
+        scanf("%c",&trash);
+    }
+    for(int i=0;i<5;i++)
+    {
+        printf("Here are the first name %d:",i+1,names[i]);
     }
 
     return 0;
